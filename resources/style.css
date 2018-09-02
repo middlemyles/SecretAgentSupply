@@ -1,0 +1,192 @@
+body {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+}
+/*----- controlls the Header-----*/
+header {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding-top: 0.66rem;
+    padding-bottom: 0.66rem;
+    padding-left: 5rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 1.5rem;
+    padding-right: 1rem;
+}
+.logo .secret {
+    font-size: 1rem;
+    font-family: helvetica;
+}
+/*---end of the header----*/
+/*--- Start of MAIN BANNER-----*/
+.main-banner {
+    width: 100%;
+    height: 25em;
+}
+.banner-content {
+    background-color: black;
+    color: white;
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+    height: 25em;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+.banner-text {
+    display: flex;
+    width: 20em;
+    height: 10em;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+.banner-text h4 {
+    font-weight: bold;
+}
+.banner-text h1 {
+    font-weight: bold;
+    font-size: 1.75em;
+}
+
+/*-----end of MAIN BANNER-----*/
+/*-----start of NAV LIST----*/
+.nav-list {
+    height: 52px;
+    background-color: firebrick;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 52px;
+    color: white;
+}
+.nav-two {
+    display: none;
+}
+/*----- end of NAV LIST-----*/
+/*----- start of image banner-----*/
+.image-banner {
+    display: flex;
+    width: 100%;
+    margin: 3rem 0rem;
+    justify-content: space-evenly;
+}
+.image {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid black;
+    text-align: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 16rem;
+    align-items: center;
+    margin: 0rem 1rem;
+}
+.image img {
+    max-width: 50%;
+    padding: 2rem 0rem;
+    height: 9rem;
+}
+.image h4{
+    padding: 1rem 0rem;
+    font-weight: bold;
+}
+.image div {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+/*-----end of image banner----*/
+/*-----start of location/hrs------*/
+.location-banner {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 4rem;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.location-container {
+    width: 35%;
+    background: black;
+    color: white;
+}
+.location-container span {
+
+}
+.location-text {
+
+}
+.location-text span {
+
+}
+/*----- end of location/hrs------*/
+/*----- start of footer-----*/
+footer {
+    display: flex;
+    height: 5rem;
+    background: black;
+    color: white;
+}
+footer h4 {
+
+}
+/*----- end of footer-----*/
+/*-----start of media query------*/
+@media only screen and (max-width: 1024px){
+    .logo .secret {
+        font-size: 16px;
+    }
+    .nav-list .nav-two {
+        display: inline; 
+        visibility: visible;
+        text-align: center;
+    }
+    .nav-two li {
+        padding: .75rem 0rem;
+    }
+    .nav-list ul {
+       display: none;
+    }
+    .glasses {
+        display: none;
+    }
+    .image {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 470px){
+    .main-banner {
+        height: auto;
+    }
+    .banner-content{
+        height: 15rem;
+        padding-top: 10rem;
+    }
+    .watch {
+        display: none;
+    }
+    .pen {
+        width: 90%;
+    }
+    .location-banner {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        justify-content: center;
+    }
+}
+
+/*-----end of media query----*/
